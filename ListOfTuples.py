@@ -58,7 +58,7 @@ def sBracketTest(N):
     
     #checking the N tribracket
     #%%[a,b,[b,c,d]] = [a,[a,b,c],[[a,b,c],c,d]]
-    size=len(N)
+    size=len(N[0])
     for a in range(0,size):
         for b in range(0,size):
             for c in range(0,size):
@@ -100,7 +100,7 @@ def aBracketTest(N):
     '''
     answer=False
     
-    size=len(N)
+    size=len(N[0])
     
     #%%< a, < a,b,c >, c > =b  - I don't like that is says b here
     for a in range(0,size):
@@ -143,7 +143,7 @@ def BracketCompatTest(N):
     ''' Takes in two brackets and checks if they are compatible'''
     answer=False
     
-    size=len(N)
+    size=len(N[0])
     #%%[a,b < b,c,d >]= < a, < a,b,c >, [ < a,b,c >, c,d] > 
     for a in range(0,size):
         for b in range(0,size):
